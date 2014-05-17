@@ -1,0 +1,130 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hero {
+    min-height: 800px;
+    background-image: url('http://lorempixel.com/1920/1080/city/');
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.section.hero .title {
+    font-size: 80px;
+    font-weight: bolder;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+}
+
+.section.hero .lead {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn-buy {
+    margin-top: 100px;
+    background-color: #595A9D;
+    border-color: #56599C;
+    text-transform: uppercase;
+    color: white;
+    padding: 20px 30px;
+    font-weight: bold;
+}
+
+.btn-buy:hover {
+    color: #595A9D;
+    background-color: white;
+}
+
+.section {
+    padding: 100px;
+}
+
+.section.dark {
+    background-color: #595A9D;
+    color: white;
+}
+
+.section .row {
+    margin-bottom: 50px;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #595A9D;
+    margin-bottom: 50px;
+}
+
+.title.text-left {
+    text-align: left;
+}
+
+.section.dark .title {
+    color: white;
+}
+
+.section.dark .table > thead > tr > th,
+.section.dark .table > tbody > tr > td {
+    border-color: white;
+    vertical-align: middle;
+}
+
+.social-links a {
+    color: #595A9D;
+    font-size: 20px;
+}
+
+.section.dark .social-link a {
+    color: white;
+}
+
+.section .event {
+    color: #7ac0c4;
+}
+
+.section .speaker {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.section .sponsor {
+    font-size: 65px;
+    padding: 0 65px;
+    color: #7ac0c4;
+}
+
+.section .sponsor:hover {
+    color: #ccc;
+}
+
+.section .lead {
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 2em;
+}
+
+.section .ps {
+    margin-top: 50px;
+}
+
+.section.footer {
+    padding: 50px 100px;
+}
+
+.section.footer .row {
+    margin-bottom: 0;
+}
+
+.section.footer a {
+    color: white;
+    color: #7ac0c4;
+}
+
+.section.footer .social-icons a {
+    font-size: 20px;
+    color: white;
+}
