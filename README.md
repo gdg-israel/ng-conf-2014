@@ -1,7 +1,7 @@
-ngcon-site
-==========
+ngconf-site
+===========
 
-ng-con.gdg.co.il website. Author: Uri Shaked, License: MIT.
+ng-conf.gdg.co.il website. Author: Uri Shaked, License: MIT.
 
 ## Setup instructions
 
@@ -13,6 +13,6 @@ ng-con.gdg.co.il website. Author: Uri Shaked, License: MIT.
 
 ## Development instructions
 
-Run `gulp serve` and then open http://localhost:7000/ in your webbrowser.
+Run `gulp` and then open http://localhost:7000/ in your web-browser.
 
-When ready to deploy, simply push to the gh-pages branch.
+When ready to deploy, run `gulp publish` to push to the gh-pages branch.
