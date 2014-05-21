@@ -1,0 +1,137 @@
+/* NGCon Israel Website Stylesheet */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.section.hero {
+	min-height: 400px;
+	background: #333;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	text-align: center;
+
+	h1.title {
+		font-size: 80px;
+		font-weight: bolder;
+		text-align: center;
+		text-transform: uppercase;
+		margin: 0;
+		color: #fff;
+	}
+
+	.lead {
+		color: white;
+		text-align: center;
+		font-size: 30px;
+	}
+
+	img {
+		margin-right: 32px;
+	}
+
+	.btn-tickets {
+		margin-top: 50px;
+		background-color: #d84437;
+		border-color: #d84437;
+		text-transform: uppercase;
+		color: white;
+		padding: 20px 30px;
+		font-weight: bold;
+
+		&:hover {
+			color: #595A9D;
+			background-color: white;
+		}
+	}
+}
+
+.section {
+	padding: 100px;
+
+	.row {
+		margin-bottom: 50px;
+	}
+
+	.title {
+		text-align: center;
+		text-transform: uppercase;
+		color: #595A9D;
+		margin-bottom: 50px;
+
+		&.text-left {
+			text-align: left;
+		}
+	}
+
+	.event {
+		color: #7ac0c4;
+	}
+
+	.speaker {
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	.sponsor {
+		font-size: 65px;
+		padding: 0 65px;
+		color: #7ac0c4;
+
+		&:hover {
+			color: #ccc;
+		}
+	}
+
+	.lead {
+		font-weight: 100;
+		font-size: 16px;
+		line-height: 2em;
+	}
+
+	.ps {
+		margin-top: 50px;
+	}
+
+	.social-links a {
+		color: #595A9D;
+		font-size: 20px;
+	}
+
+	&.footer {
+		padding: 50px 100px;
+
+		.row {
+			margin-bottom: 0;
+		}
+		a {
+			color: white;
+			color: #7ac0c4;
+		}
+
+		.social-icons a {
+			font-size: 20px;
+			color: white;
+		}
+
+	}
+
+	&.dark {
+		background-color: #595A9D;
+		color: white;
+
+		.title {
+			color: white;
+		}
+
+		.table > thead > tr > th,
+		.table > tbody > tr > td {
+			border-color: white;
+			vertical-align: middle;
+		}
+
+		.social-link a {
+			color: white;
+		}
+	}
+}
