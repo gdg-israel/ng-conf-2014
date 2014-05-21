@@ -9,7 +9,7 @@ body {
   .section .title {
     text-align: center;
     text-transform: uppercase;
-    color: #595A9D;
+    color: #d84437;
     margin-bottom: 50px; }
     .section .title.text-left {
       text-align: left; }
@@ -50,9 +50,9 @@ body {
       display: inline-block;
       width: 160px;
       margin-right: 30px; }
-  .section .event {
-    color: #7ac0c4; }
-  .section .schedule .speaker {
+  .section.schedule .event {
+    color: #d84437; }
+  .section.schedule .speaker {
     font-weight: bold;
     text-transform: uppercase; }
   .section .sponsor {
@@ -81,7 +81,7 @@ body {
       font-size: 20px;
       color: white; }
   .section.dark {
-    background-color: #595A9D;
+    background-color: #333;
     color: white; }
     .section.dark .title {
       color: white; }

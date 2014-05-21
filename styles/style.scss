@@ -1,5 +1,7 @@
 /* NGCon Israel Website Stylesheet */
 
+$ngbackground: #333;
+$ngbackground-light: #666;
 $ngcolor: #d84437;
 $ngcolor-dark: #af362c;
 
@@ -17,7 +19,7 @@ body {
 	.title {
 		text-align: center;
 		text-transform: uppercase;
-		color: #595A9D;
+		color: $ngcolor;
 		margin-bottom: 50px;
 
 		&.text-left {
@@ -43,7 +45,7 @@ body {
 
 	&.hero {
 		min-height: 400px;
-		background: #333;
+		background: $ngbackground;
 		background-position: 50%;
 		background-repeat: no-repeat;
 		text-align: center;
@@ -78,11 +80,11 @@ body {
 		}
 	}
 
-	.event {
-		color: #7ac0c4;
-	}
+	&.schedule {
+		.event {
+			color: $ngcolor;
+		}
 
-	.schedule {
 		.speaker {
 			font-weight: bold;
 			text-transform: uppercase;
@@ -133,7 +135,7 @@ body {
 	}
 
 	&.dark {
-		background-color: #595A9D;
+		background-color: $ngbackground;
 		color: white;
 
 		.title {
