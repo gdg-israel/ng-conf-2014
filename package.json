@@ -16,16 +16,13 @@
     "url": "https://github.com/gdg-israel/ngcon-site/issues"
   },
   "homepage": "https://github.com/gdg-israel/ngcon-site",
-  "dependencies": {
+  "devDependencies": {
     "tiny-lr": "0.0.7",
     "express": "^4.3.0",
     "gulp": "^3.6.2",
     "gulp-livereload": "^1.5.0",
     "connect-livereload": "^0.4.0",
-    "gulp-sass": "^0.7.1"
-  },
-  "devDependencies": {
-    "gulp-debug": "^0.3.0",
+    "gulp-sass": "^0.7.1",
     "gulp-git": "^0.4.2",
     "gulp-watch": "^0.6.4"
   }

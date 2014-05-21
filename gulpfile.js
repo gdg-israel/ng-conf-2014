@@ -6,7 +6,6 @@ var gulp = require('gulp'),
 	watch = require('gulp-watch'),
 	sass = require('gulp-sass'),
 	livereload = require('gulp-livereload'),
-	debug = require('gulp-debug'),
 	connectLivereload = require('connect-livereload'),
 	git = require('gulp-git'),
 	express = require('express');
