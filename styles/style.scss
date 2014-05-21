@@ -82,7 +82,6 @@ body {
 				transition: opacity 0.2s;
 
 				.speaker-bio {
-					display: none;
 					position: absolute;
 					left: 50px;
 					background: white;
@@ -91,9 +90,10 @@ body {
 					width: 100%;
 					font-size: 18px;
 					text-align: left;
-					padding: 0 32px;
 					overflow: hidden;
 					z-index: 20;
+					transition: opacity 0.8s;
+					opacity: 0;
 				}
 
 				&:hover {
@@ -101,6 +101,7 @@ body {
 
 					.speaker-bio {
 						display: block;
+						opacity: 1;
 					}
 				}
 			}
