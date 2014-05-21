@@ -73,10 +73,53 @@ body {
 	&.speakers {
 		text-align: center;
 
-		.speaker {
-			display: inline-block;
-			width: 160px;
-			margin-right: 30px;
+		.row {
+			.speaker {
+				display: inline-block;
+				width: 160px;
+				margin-right: 30px;
+				opacity: 1;
+				transition: opacity 0.2s;
+
+				.speaker-bio {
+					display: none;
+					position: absolute;
+					left: 50px;
+					background: white;
+					top: 270px;
+					height: 250px;
+					width: 100%;
+					font-size: 18px;
+					text-align: left;
+					padding: 0 32px;
+					overflow: hidden;
+					z-index: 20;
+				}
+
+				&:hover {
+					opacity: 1 !important;
+
+					.speaker-bio {
+						display: block;
+					}
+				}
+			}
+
+			+ .row {
+				.speaker {
+					.speaker-bio {
+						top: -280px;
+					}
+				}
+			}
+
+			&:hover {
+				position: relative;
+
+				.speaker {
+					opacity: 0.5;
+				}
+			}
 		}
 	}
 
