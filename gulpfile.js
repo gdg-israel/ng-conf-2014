@@ -8,6 +8,7 @@ var gulp = require('gulp'),
 	livereload = require('gulp-livereload'),
 	debug = require('gulp-debug'),
 	connectLivereload = require('connect-livereload'),
+	git = require('gulp-git'),
 	express = require('express');
 
 var serverPort = 7000;
@@ -19,7 +20,7 @@ var paths = {
 	html: ['*.html']
 };
 
-gulp.task('sass', function() {
+gulp.task('sass', function () {
 	gulp.src(paths.styles)
 		.pipe(sass())
 		.pipe(gulp.dest('styles'))
@@ -46,6 +47,11 @@ gulp.task('watch', function () {
 	gulp.src([].concat(paths.images, paths.html))
 		.pipe(watch())
 		.pipe(lrserver);
+});
+
+gulp.task('publish', function () {
+	git.push('origin', 'master:gh-pages')
+		.end();
 });
 
 gulp.task('default', ['serve', 'watch']);
