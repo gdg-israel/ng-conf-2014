@@ -14,7 +14,7 @@ var serverPort = 7000;
 var livereloadPort = 35730;
 
 var paths = {
-	images: ['images/*.{svg,png}'],
+	images: ['images/**/*.{svg,png,jpg}'],
 	styles: ['styles/*.scss'],
 	html: ['*.html']
 };
