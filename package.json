@@ -25,7 +25,8 @@
     "gulp-sass": "^0.7.1"
   },
   "devDependencies": {
-    "gulp-watch": "^0.6.4",
-    "gulp-git": "^0.4.2"
+    "gulp-debug": "^0.3.0",
+    "gulp-git": "^0.4.2",
+    "gulp-watch": "^0.6.4"
   }
 }
