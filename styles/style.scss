@@ -74,6 +74,8 @@ body {
 		text-align: center;
 
 		.row {
+			position: relative;
+
 			.speaker {
 				display: inline-block;
 				width: 160px;
@@ -82,6 +84,7 @@ body {
 				transition: opacity 0.2s;
 
 				.speaker-bio {
+					pointer-events: none;
 					position: absolute;
 					left: 50px;
 					background: white;
@@ -98,9 +101,9 @@ body {
 
 				&:hover {
 					opacity: 1 !important;
+					z-index: 10;
 
 					.speaker-bio {
-						display: block;
 						opacity: 1;
 					}
 				}
@@ -111,14 +114,6 @@ body {
 					.speaker-bio {
 						top: -280px;
 					}
-				}
-			}
-
-			&:hover {
-				position: relative;
-
-				.speaker {
-					opacity: 0.5;
 				}
 			}
 		}
