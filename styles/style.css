@@ -17,9 +17,7 @@ nav.header-section {
     bottom: 5px;
     z-index: 2; }
     nav.header-section .container .ng-conf-title {
-      position: absolute;
-      top: 0;
-      left: 0; }
+      float: left; }
       nav.header-section .container .ng-conf-title h1 {
         color: white;
         font-size: 32px;
@@ -34,9 +32,7 @@ nav.header-section {
         display: inline-block;
         margin-left: 24px; }
     nav.header-section .container .get-ticket {
-      position: absolute;
-      top: 0;
-      right: 200px; }
+      float: right; }
       nav.header-section .container .get-ticket a {
         margin-top: 4px;
         background-color: #d84437;
@@ -50,16 +46,16 @@ nav.header-section {
           border-color: #af362c;
           background-color: white; }
     nav.header-section .container .social-network {
-      position: absolute;
-      top: 10px;
-      right: 0;
-      width: 110px; }
+      display: none;
+      float: right;
+      height: 60px;
+      padding: 10px;
+      width: 120px; }
       nav.header-section .container .social-network ul li {
         display: inline-block;
         width: 30px;
         height: 30px;
-        padding-left: none;
-        padding-right: none; }
+        padding: 0; }
         nav.header-section .container .social-network ul li a {
           color: white;
           text-decoration: none;
