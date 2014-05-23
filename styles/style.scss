@@ -262,6 +262,18 @@ nav.header-section {
 		}
 	}
 
+	&.ng-coding {
+		h3 {
+			text-align: center;
+			margin-bottom: 32px;
+		}
+
+		p {
+			font-size: 20px;
+			margin: 20px 0;
+		}
+	}
+
 	&.schedule {
 		.event {
 			color: $ngcolor;

@@ -179,6 +179,12 @@ nav.header-section {
             opacity: 1; }
       .section.speakers .row + .row .speaker .speaker-bio {
         top: -280px; }
+  .section.ng-coding h3 {
+    text-align: center;
+    margin-bottom: 32px; }
+  .section.ng-coding p {
+    font-size: 20px;
+    margin: 20px 0; }
   .section.schedule .event {
     color: #d84437; }
   .section.schedule .speaker {
