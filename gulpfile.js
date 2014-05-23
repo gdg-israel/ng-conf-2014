@@ -13,7 +13,7 @@ var gulp = require('gulp'),
 	git = require('gulp-git'),
 	express = require('express');
 
-var serverPort = 9000;
+var serverPort = 7000;
 var livereloadPort = 35730;
 
 var paths = {
