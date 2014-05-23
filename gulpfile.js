@@ -13,8 +13,8 @@ var gulp = require('gulp'),
 	git = require('gulp-git'),
 	express = require('express');
 
-var serverPort = 7000;
-var livereloadPort = 35730;
+var serverPort = process.env.GDG_DEVSERVER_PORT || 7000;
+var livereloadPort = process.env.GDG_LIVERELOAD_PORT || 35730;
 
 var paths = {
 	scripts: ['js/*.js'],
