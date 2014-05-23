@@ -8,6 +8,7 @@ var gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	uglify = require('gulp-uglify'),
 	rename = require('gulp-rename'),
+	imagemin = require('gulp-imagemin'),
 	livereload = require('gulp-livereload'),
 	connectLivereload = require('connect-livereload'),
 	git = require('gulp-git'),
@@ -23,7 +24,6 @@ var paths = {
 	html: ['*.html']
 };
 
-
 gulp.task('scripts', function () {
 	return gulp.src(paths.scripts)
 		.pipe(concat('main.js'))
@@ -36,6 +36,12 @@ gulp.task('sass', function () {
 	gulp.src(paths.styles)
 		.pipe(sass())
 		.pipe(gulp.dest('styles'))
+});
+
+gulp.task('imagemin', function() {
+	gulp.src(paths.images)
+		.pipe(imagemin())
+		.pipe(gulp.dest('images'));
 });
 
 gulp.task('serve', ['sass'], function () {
