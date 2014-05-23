@@ -301,7 +301,9 @@ nav.header-section {
 
 	.sponsor {
 		font-size: 65px;
-		padding: 0 65px;
+		padding: 0 40px;
+		min-width: 330px;
+		display: inline-block;
 		color: #7ac0c4;
 
 		&:hover {

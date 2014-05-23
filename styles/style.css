@@ -198,7 +198,9 @@ nav.header-section {
     text-transform: uppercase; }
   .section .sponsor {
     font-size: 65px;
-    padding: 0 65px;
+    padding: 0 40px;
+    min-width: 330px;
+    display: inline-block;
     color: #7ac0c4; }
     .section .sponsor:hover {
       color: #ccc; }
