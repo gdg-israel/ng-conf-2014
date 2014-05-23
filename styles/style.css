@@ -185,6 +185,17 @@ nav.header-section {
   .section.ng-coding p {
     font-size: 20px;
     margin: 20px 0; }
+  .section.schedule .shared-session {
+    text-align: center; }
+    .section.schedule .shared-session .event {
+      color: #c0c0c0; }
+    .section.schedule .shared-session.highlight {
+      background: #e6e6e6; }
+      .section.schedule .shared-session.highlight .event {
+        font-weight: bold;
+        color: #d84437; }
+      .section.schedule .shared-session.highlight .speaker {
+        color: #333; }
   .section.schedule .event {
     color: #d84437; }
   .section.schedule .speaker {

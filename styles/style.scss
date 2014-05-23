@@ -6,6 +6,7 @@ $ngbackground-light: #666;
 $ngcolor: #d84437;
 $ngcolor-dark: #af362c;
 $ngcolor2: #e6e6e6;
+$ngcolor2-dark: #c0c0c0;
 $headerContainerPadding: 5px;
 
 body {
@@ -275,6 +276,25 @@ nav.header-section {
 	}
 
 	&.schedule {
+		.shared-session {
+			text-align: center;
+			.event {
+				color: $ngcolor2-dark;
+			}
+
+			&.highlight {
+				background: $ngcolor2;
+
+				.event {
+					font-weight: bold;
+					color: $ngcolor;
+				}
+				.speaker {
+					color: $ngbackground;
+				}
+			}
+		}
+
 		.event {
 			color: $ngcolor;
 		}
