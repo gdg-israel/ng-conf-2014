@@ -9,6 +9,7 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	rename = require('gulp-rename'),
 	imagemin = require('gulp-imagemin'),
+	prefix = require('gulp-autoprefixer'),
 	livereload = require('gulp-livereload'),
 	connectLivereload = require('connect-livereload'),
 	git = require('gulp-git'),
@@ -35,10 +36,11 @@ gulp.task('scripts', function () {
 gulp.task('sass', function () {
 	gulp.src(paths.styles)
 		.pipe(sass())
+		.pipe(prefix())
 		.pipe(gulp.dest('styles'))
 });
 
-gulp.task('imagemin', function() {
+gulp.task('imagemin', function () {
 	gulp.src(paths.images)
 		.pipe(imagemin())
 		.pipe(gulp.dest('images'));
@@ -61,6 +63,7 @@ gulp.task('watch', function () {
 	gulp.src(paths.styles)
 		.pipe(watch())
 		.pipe(sass())
+		.pipe(prefix())
 		.pipe(gulp.dest('styles'))
 		.pipe(lrserver);
 
