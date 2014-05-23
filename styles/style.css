@@ -200,6 +200,7 @@ nav.header-section {
     font-size: 65px;
     padding: 0 40px;
     min-width: 330px;
+    min-height: 150px;
     display: inline-block;
     color: #7ac0c4; }
     .section .sponsor:hover {
