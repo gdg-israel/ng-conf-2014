@@ -5,6 +5,7 @@ $ngbackground: #333;
 $ngbackground-light: #666;
 $ngcolor: #d84437;
 $ngcolor-dark: #af362c;
+$ngcolor2: #e6e6e6;
 $headerContainerPadding: 5px;
 
 body {
@@ -167,18 +168,33 @@ nav.header-section {
 	&.hero {
 		position: relative;
 		height: 611px;
-		background: #333;
+		background: $ngbackground;
 		background-position: 50%;
 		background-repeat: no-repeat;
 		text-align: center;
 		overflow: hidden;
 
 		.content {
-			margin: 250px auto 0;
+			margin: 200px auto 0;
 			width: 100%;
 			position: absolute;
 			top: 0;
 			left: 0;
+
+			h2 {
+				color: $ngcolor2;
+				margin-bottom: 62px;
+				font-size: 82px;
+
+				small {
+					display: block;
+					font-weight: bold;
+					text-align: right;
+					font-size: 22px;
+					margin: 0 auto;
+					width: 280px;
+				}
+			}
 
 			img {
 				margin-right: 32px;
