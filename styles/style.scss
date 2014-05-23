@@ -165,20 +165,24 @@ nav.header-section {
 	}
 
 	&.hero {
-		min-height: 611px;
+		position: relative;
+		height: 611px;
 		background: #333;
 		background-position: 50%;
 		background-repeat: no-repeat;
 		text-align: center;
+		overflow: hidden;
 
 		.content {
-
-			padding: 93px;
+			margin: 250px auto 0;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
 
 			img {
-				//          margin-right: 32px;
+				margin-right: 32px;
 			}
-
 		}
 
 		video {

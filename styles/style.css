@@ -113,20 +113,30 @@ nav.header-section {
       border-color: #af362c;
       background-color: white; }
   .section.hero {
-    min-height: 611px;
+    position: relative;
+    height: 611px;
     background: #333;
     background-position: 50%;
     background-repeat: no-repeat;
-    text-align: center; }
+    text-align: center;
+    overflow: hidden; }
     .section.hero .content {
-      padding: 93px; }
+      margin: 250px auto 0;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .section.hero .content img {
+        margin-right: 32px; }
     .section.hero video {
+      visibility: inherit;
       display: inline-block;
       vertical-align: baseline;
       position: absolute;
       top: 0;
       left: 0;
-      right: 0; }
+      right: 0;
+      opacity: 0.3; }
   .section.speakers {
     text-align: center;
     padding-top: 1px; }
