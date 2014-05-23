@@ -149,8 +149,7 @@ nav.header-section {
       right: 0;
       opacity: 0.3; }
   .section.speakers {
-    text-align: center;
-    padding-top: 1px; }
+    text-align: center; }
     .section.speakers .row {
       position: relative; }
       .section.speakers .row .speaker {
