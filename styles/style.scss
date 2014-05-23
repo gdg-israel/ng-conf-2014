@@ -17,9 +17,10 @@ nav.header-section {
 	position: fixed;
 	top: 0;
 	left: 0;
+	right: 0;
 	height: 60px;
-	width: 100%;
 	z-index: 9999;
+	-webkit-transform: translate3d(0,0,0);
 
 	.container {
 		position: absolute;
