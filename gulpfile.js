@@ -5,19 +5,36 @@
 var gulp = require('gulp'),
 	watch = require('gulp-watch'),
 	sass = require('gulp-sass'),
+    concat = require('gulp-concat'),
+    uglify = require('gulp-uglify'),
+    rename = require('gulp-rename'),
 	livereload = require('gulp-livereload'),
 	connectLivereload = require('connect-livereload'),
 	git = require('gulp-git'),
 	express = require('express');
 
-var serverPort = 7000;
+var serverPort = 9000;
 var livereloadPort = 35730;
 
 var paths = {
+    scripts: ['js/*.js'],
 	images: ['images/**/*.{svg,png,jpg}'],
 	styles: ['styles/*.scss'],
 	html: ['*.html']
 };
+
+
+gulp.task('scripts', function() {
+    return gulp.src(paths.scripts)
+        .pipe(concat('main.js'))
+        .pipe(rename({suffix: '.min'}))
+        .pipe(uglify())
+        .pipe(gulp.dest('build/js'));
+});
+
+
+
+
 
 gulp.task('sass', function () {
 	gulp.src(paths.styles)
@@ -37,6 +54,8 @@ gulp.task('serve', ['sass'], function () {
 gulp.task('watch', function () {
 	var lrserver = livereload(livereloadPort);
 
+    gulp.watch(paths.scripts, ['scripts']);
+
 	gulp.src(paths.styles)
 		.pipe(watch())
 		.pipe(sass())
@@ -53,4 +72,4 @@ gulp.task('publish', function () {
 		.end();
 });
 
-gulp.task('default', ['serve', 'watch']);
+gulp.task('default', ['scripts','serve', 'watch']);

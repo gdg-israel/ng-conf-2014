@@ -1,0 +1,39 @@
+@mixin transition-effect($time)
+{
+  -webkit-transition: all ease-in-out $time;
+  -moz-transition: all ease-in-out $time;
+  -o-transition: all ease-in-out $time;
+  transition: all ease-in-out $time;
+}
+
+@mixin transition-cubic-bezier($time)
+{
+  -webkit-transition: all $time cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transition: all $time cubic-bezier(0.165, 0.84, 0.44, 1);
+  -ms-transition: all $time cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all $time cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all $time cubic-bezier(0.165, 0.84, 0.44, 1);
+
+}
+
+@mixin transition-linear($time)
+{
+  -webkit-transition: all $time $time linear;
+  -moz-transition: all $time $time linear;
+  -o-transition: all $time $time linear;
+  transition: all $time $time linear;
+}
+
+@mixin opacity($opacity)
+{
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$opacity * 100})";
+  -moz-opacity: $opacity;
+  -khtml-opacity: $opacity;
+  opacity: $opacity;
+
+}
+
+@mixin cursor
+{
+  cursor: pointer;
+}
