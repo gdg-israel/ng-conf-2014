@@ -5,41 +5,45 @@
 var gulp = require('gulp'),
 	watch = require('gulp-watch'),
 	sass = require('gulp-sass'),
-    concat = require('gulp-concat'),
-    uglify = require('gulp-uglify'),
-    rename = require('gulp-rename'),
+	concat = require('gulp-concat'),
+	uglify = require('gulp-uglify'),
+	rename = require('gulp-rename'),
+	imagemin = require('gulp-imagemin'),
+	prefix = require('gulp-autoprefixer'),
 	livereload = require('gulp-livereload'),
 	connectLivereload = require('connect-livereload'),
 	git = require('gulp-git'),
 	express = require('express');
 
-var serverPort = 9000;
-var livereloadPort = 35730;
+var serverPort = process.env.GDG_DEVSERVER_PORT || 9000;
+var livereloadPort = process.env.GDG_LIVERELOAD_PORT || 35730;
 
 var paths = {
-    scripts: ['js/*.js'],
+	scripts: ['js/*.js'],
 	images: ['images/**/*.{svg,png,jpg}'],
 	styles: ['styles/*.scss'],
 	html: ['*.html']
 };
 
-
-gulp.task('scripts', function() {
-    return gulp.src(paths.scripts)
-        .pipe(concat('main.js'))
-        .pipe(rename({suffix: '.min'}))
-        .pipe(uglify())
-        .pipe(gulp.dest('build/js'));
+gulp.task('scripts', function () {
+	return gulp.src(paths.scripts)
+		.pipe(concat('main.js'))
+		.pipe(rename({suffix: '.min'}))
+		.pipe(uglify())
+		.pipe(gulp.dest('build/js'));
 });
-
-
-
-
 
 gulp.task('sass', function () {
 	gulp.src(paths.styles)
 		.pipe(sass())
+		.pipe(prefix())
 		.pipe(gulp.dest('styles'))
+});
+
+gulp.task('imagemin', function () {
+	gulp.src(paths.images)
+		.pipe(imagemin())
+		.pipe(gulp.dest('images'));
 });
 
 gulp.task('serve', ['sass'], function () {
@@ -54,11 +58,12 @@ gulp.task('serve', ['sass'], function () {
 gulp.task('watch', function () {
 	var lrserver = livereload(livereloadPort);
 
-    gulp.watch(paths.scripts, ['scripts']);
+	gulp.watch(paths.scripts, ['scripts']);
 
 	gulp.src(paths.styles)
 		.pipe(watch())
 		.pipe(sass())
+		.pipe(prefix())
 		.pipe(gulp.dest('styles'))
 		.pipe(lrserver);
 
@@ -72,4 +77,4 @@ gulp.task('publish', function () {
 		.end();
 });
 
-gulp.task('default', ['scripts','serve', 'watch']);
+gulp.task('default', ['scripts', 'serve', 'watch']);

@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
 
-		<title>ng-conf GDG Israel</title>
+		<!--<link rel="apple-touch-icon" href='<%#= @settings.mobile_icon_url :ios_57x57 %>' />-->
+		<!--<link rel="apple-touch-icon" sizes="72x72" href='<%#= @settings.mobile_icon_url :ios_72x72 %>' />-->
+		<!--<link rel="apple-touch-icon" sizes="114x114" href='<%#= @settings.mobile_icon_url :ios_114x114 %>' />-->
+
+		<link rel="apple-touch-icon" href='images/57x57.png' />
+		<link rel="apple-touch-icon" sizes="72x72" href='images/72x72.png' />
+		<link rel="apple-touch-icon" sizes="114x114" href='images/114x114_.png' />
+
+
+		<title>ng-conf Israel 2014 - Israel Angular.JS Conference</title>
+
+		<meta name="description" content="June 2nd, Campus Tel Aviv. Featuring a live Q&amp;A session with Miško Hevery, a ng-coding session, and great talks from industry experts. Register now to reserve your ticket." />
 
 		<link href="//fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css"/>
 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
 
+		<link rel="image_src" href="images/social.png" />
+
 		<link rel="stylesheet" type="text/css" href="styles/style.css"/>
-
-        <script type="text/javascript" src="build/js/main.min.js"></script>
-
+		<link rel="shortcut icon" href="favicon.ico?v=2" />
 	</head>
 	<body>
 
@@ -24,38 +36,45 @@
                     <h1>ng-conf Israel</h1>
                     <h3>Campus Tel-Aviv, June 2nd</h3>
                 </div>
-                <div class="get-ticket">
+	            <div class="social-network">
+		            <ul class="list-unstyled list-inline text-right social-icons">
+			            <li><a href="https://www.facebook.com/GDGTelAviv#"><i class="fa fa-facebook"></i></a></li>
+			            <li><a href="https://twitter.com/GtugTLV"><i class="fa fa-twitter"></i></a></li>
+			            <li><a href="https://plus.google.com/104207746710491978555/"><i class="fa fa-google-plus"></i></a>
+			            </li>
+		            </ul>
+	            </div>
+	            <div class="get-ticket">
                     <a href="https://www.eventbrite.com/e/ng-conf-israel-2014-tickets-11682920931" class="btn btn-tickets btn-lg">
                         Get your ticket now
                     </a>
                 </div>
-                <div class="social-network">
-                    <ul class="list-unstyled list-inline text-right social-icons">
-                        <li><a href="https://www.facebook.com/GDGTelAviv#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://twitter.com/GtugTLV"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://plus.google.com/104207746710491978555/"><i class="fa fa-google-plus"></i></a>
-                        </li>
-                    </ul>
-                </div>
+				<div class="share-on-mobile-modal">
+					<span>Share</span>
+					<ul class="list-unstyled list-inline text-right social-icons">
+						<li><a href="https://www.facebook.com/GDGTelAviv#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/GtugTLV"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://plus.google.com/104207746710491978555/"><i class="fa fa-google-plus"></i></a>
+						</li>
+					</ul>
+				</div>
             </div>
             <div class="bg-container"></div>
         </nav>
 
 		<!-- Hero Section -->
-		<header class="hero section">
-
-            <div class="content">
-                <img src="images/angular.svg" alt="Angular.JS"/>
-                <img src="images/gdg.svg" alt="Google Developers Group Israel"/>
-            </div>
-
-
-            <video controls muted autoplay="1" loop="1" poster="/images/poster.jpg" style="visibility: inherit; opacity: 0.30;">
-                <source src="/video/Ng-Conf.mp4" type='video/mp4' />
+		<header class="hero section home-section">
+            <video muted autoplay="1" loop="1" poster="/images/poster.jpg">
+                <source src="/video/ng-conf.mp4" type='video/mp4' />
                 <!--<source src="/video/.webm" type='video/webm' />-->
                 <!--<source src="/video/.oggtheora.ogv" type='video/ogg' />-->
             </video>
 
+			<div class="content">
+				<h2>ng-conf <small>ISRAEL</small></h2>
+				<img src="images/angular.svg" alt="Angular.JS"/>
+				<img src="images/gdg.svg" alt="Google Developers Group Israel"/>
+			</div>
 		</header>
 
 		<!-- Speakers Section -->
@@ -72,10 +91,11 @@
 					</ul>
 					<div class="speaker-bio">
 						<h2>Oren Rubin</h2>
-						Oren has over 16 years of experience in the software industry, starting with Distributed systems,
-						Compilers, Image Processing, and he has been focused on Web Development in the last 6 years.
-						Although being a busy entrepreneur, Oren finds time to teach Angular at the Technion, manages
-						both the Israeli Selenium and Ember meetups, and plays BugHouse Chess.
+						Oren has over 16 years of experience in the software industry, started with Distributed Systems,
+						Compilers, Image Processing, he has been focusing on Web Development in the last 6 years.
+						Although being a busy entrepreneur, Oren always finds time to help the community: he manages
+						both the Israeli Selenium and Ember meetups, frequently lectures in other meetups too, and
+						teaches Angular.js at the Technion.
 					</div>
 				</div>
 
@@ -272,7 +292,7 @@
 				<tbody>
 					<tr>
 						<td>14:00 - 14:30</td>
-						<td colspan="2">
+						<td colspan="2" class="shared-session">
 							<h4 class="event">Check-in</h4>
 							<h6 class="speaker"></h6>
 						</td>
@@ -304,11 +324,7 @@
 
 					<tr>
 						<td>16:00 - 16:30</td>
-						<td>
-							<h4 class="event">Break</h4>
-							<h6 class="speaker"></h6>
-						</td>
-						<td>
+						<td colspan="2" class="shared-session">
 							<h4 class="event">Break</h4>
 							<h6 class="speaker"></h6>
 						</td>
@@ -317,8 +333,8 @@
 					<tr>
 						<td>16:30 - 17:15</td>
 						<td>
-							<h4 class="event">Alon Heler</h4>
-							<h6 class="speaker">Directives for Beginners</h6>
+							<h4 class="event">Directives for Beginners</h4>
+							<h6 class="speaker">Alon Heler</h6>
 						</td>
 						<td>
 							<h4 class="event">Getting the most from Directives</h4>
@@ -340,11 +356,7 @@
 
 					<tr>
 						<td>18:00 - 18:30</td>
-						<td>
-							<h4 class="event">Dinner</h4>
-							<h6 class="speaker"></h6>
-						</td>
-						<td>
+						<td colspan="2" class="shared-session">
 							<h4 class="event">Dinner</h4>
 							<h6 class="speaker"></h6>
 						</td>
@@ -364,7 +376,7 @@
 
 					<tr>
 						<td>19:15 - 20:00</td>
-						<td colspan="2">
+						<td colspan="2" class="shared-session highlight">
 							<h4 class="event">Live Q&amp;A Session with the Angular.JS Team</h4>
 							<h6 class="speaker">Miško Hevery (via Hangouts)</h6>
 						</td>
@@ -375,12 +387,39 @@
 
 		</section>
 
+		<!-- ng-coding Section -->
+		<section class="section ng-coding">
+			<h2 class="title">ng-coding Workshop</h2>
+			<h3>Hack on Angular.JS. Help solving issues and adding features. Get prizes.</h3>
+			<p>
+				ng-coding live coding session is all about giving back to the community. We will work on
+				Angular.JS and related open-source project, fix bugs, add features and create new directives,
+				tools and modules for the community.
+			</p>
+			<p>
+				Workshop participants will enjoy one-on-one mentoring from industry experts, top Angular.JS
+				hackers and other talents. It is your opportunity to learn from the best, get some hands-on
+				experience with building open-source projects, and perhaps even win some prizes.
+			</p>
+			<p>
+				We will give away a Nexus 7 and Angular.JS branded SWAGs to the top performing participants.
+			</p>
+			<strong>
+				Interested in sponsoring SWAG for the ng-coding workshop? <a href="mailto:uri@gdg.co.il">Contact us</a>.
+			</strong>
+		</section>
 
 		<!-- Sponsors -->
-		<section class="section">
+		<section class="section dark sponsor-section">
 			<h2 class="title">Partners &amp; Sponsors</h2>
 
 			<ul class="list-unstyled list-inline text-center">
+				<li>
+					<a class="sponsor" href="http://www.campustlv.com/" target="_blank">
+						<img src="images/partners/campus-tlv.png" alt="Campus Tel-Aviv"/>
+					</a>
+				</li>
+
 				<li>
 					<a class="sponsor" href="http://www.meetup.com/JavaScript-Israel/" target="_blank">
 						<img src="images/partners/jsisrael-small.jpg" alt="Javascript Israel"/>
@@ -389,14 +428,107 @@
 
 				<li>
 					<a class="sponsor" href="http://www.meetup.com/AngularJS-IL/" target="_blank">
-						<img src="images/partners/AngularJSIL.jpg"/>
+						<img src="images/partners/AngularJSIL.jpg" alt="AngularJSIL"/>
 					</a>
 				</li>
+
+				<li>
+					<a class="sponsor" href="http://www.meetup.com/HTML5-IL/" target="_blank">
+						<img src="images/partners/HTML5IL.jpg" alt="HTML5-IL"/>
+					</a>
+				</li>
+
+				<li>
+					<a class="sponsor" href="http://www.firebase.com/" target="_blank">
+						<img src="images/partners/firebase.jpg" alt="Firebase"/>
+					</a>
+				</li>
+
+				<li>
+					<a class="sponsor" href="http://www.jetbrains.com/" target="_blank">
+						<img src="images/partners/jetbrains.jpg" alt="Jetbrains"/>
+					</a>
+				</li>
+
+				<li>
+					<a class="sponsor" href="http://www.wix.com/" target="_blank">
+						<img src="images/partners/wix.jpg" alt="Wix"/>
+					</a>
+				</li>
+
 			</ul>
 
 			<div class="text-center ps">
 				Interested in <a href="mailto:uri@gdg.co.il">becoming a sponsor?</a>
 			</div>
+		</section>
+
+		<!-- Team -->
+		<section class="section team">
+			<h2 class="title">The ng-conf Team</h2>
+
+			<ul class="list-unstyled list-inline text-center">
+				<li>
+					<a href="http://www.linkedin.com/in/urishaked" target="_blank">
+						Uri Shaked
+					</a>
+				</li>
+
+				<li>
+					<a href="https://www.linkedin.com/in/shaireznik" target="_blank">
+						Shai Reznik
+					</a>
+				</li>
+
+				<li>
+					<a href="http://il.linkedin.com/in/ranmizrahi" target="_blank">
+						Ran Mizrahi
+					</a>
+				</li>
+
+				<li>
+					<a href="http://il.linkedin.com/pub/oren-rubin/b/7a4/537" target="_blank">
+						Oren Rubin
+					</a>
+				</li>
+
+				<li>
+					<a href="http://il.linkedin.com/in/olgako" target="_blank">
+						Olga Kogan
+					</a>
+				</li>
+
+				<li>
+					<a href="http://il.linkedin.com/pub/alexander-zhitnitsky/38/672/865" target="_blank">
+						Alexander Zhitnitsky
+					</a>
+				</li>
+
+				<li>
+					<a href="http://il.linkedin.com/pub/oshri-kdoshim/39/541/a80" target="_blank">
+						Oshri Kedoshim
+					</a>
+				</li>
+
+				<li>
+					<a href="http://il.linkedin.com/pub/amit-golan/42/910/7b2" target="_blank">
+						Amit Golan
+					</a>
+				</li>
+
+				<li>
+					<a href="http://il.linkedin.com/pub/michael-sverdlin/52/151/108" target="_blank">
+						Michael Sverdlin
+					</a>
+				</li>
+
+				<li>
+					<a href="http://il.linkedin.com/pub/daniel-gwerzman/8/4b4/817" target="_blank">
+						Daniel Gwerzman
+					</a>
+				</li>
+			</ul>
+
 		</section>
 
 		<!-- Venue -->
@@ -426,6 +558,7 @@
 			</div>
 		</section>
 
+		<script type="text/javascript" src="build/js/main.min.js"></script>
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

@@ -1,21 +1,22 @@
 {
-  "name": "ngcon-site",
+  "name": "ng-conf-site",
   "version": "1.0.0",
-  "description": "NGCon Israel Website",
+  "description": "ng-conf Israel Website",
   "main": "index.js",
+	"private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/gdg-israel/ngcon-site.git"
+    "url": "git://github.com/gdg-israel/ng-conf-site.git"
   },
   "author": "Uri Shaked",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gdg-israel/ngcon-site/issues"
+    "url": "https://github.com/gdg-israel/ng-conf-site/issues"
   },
-  "homepage": "https://github.com/gdg-israel/ngcon-site",
+  "homepage": "https://ng-conf.gdg.co.il/",
   "devDependencies": {
     "tiny-lr": "0.0.7",
     "express": "^4.3.0",
@@ -24,6 +25,11 @@
     "connect-livereload": "^0.4.0",
     "gulp-sass": "^0.7.1",
     "gulp-git": "^0.4.2",
-    "gulp-watch": "^0.6.4"
+    "gulp-watch": "^0.6.4",
+    "gulp-concat": "^2.2.0",
+    "gulp-uglify": "^0.3.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-imagemin": "^0.5.0",
+    "gulp-autoprefixer": "0.0.7"
   }
 }
