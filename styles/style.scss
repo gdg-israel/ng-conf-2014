@@ -20,7 +20,12 @@ nav.header-section {
 	right: 0;
 	height: 60px;
 	z-index: 9999;
-	-webkit-transform: translate3d(0,0,0);
+	-webkit-transform: translate3d(0, 0, 0);
+	@include transition-cubic-bezier(0.3s);
+
+	@media (max-width: 380px) {
+		height: 110px;
+	}
 
 	.container {
 		position: absolute;
@@ -32,6 +37,9 @@ nav.header-section {
 
 		.ng-conf-title {
 			float: left;
+			@media (max-width: 380px) {
+				width: 100%;
+			}
 
 			h1 {
 				color: white;
@@ -40,6 +48,10 @@ nav.header-section {
 				display: inline-block;
 				text-transform: uppercase;
 				margin: 0;
+
+				@media (max-width: 380px) {
+					display: none;
+				}
 			}
 
 			h3 {
@@ -48,12 +60,24 @@ nav.header-section {
 				font-weight: 300;
 				display: inline-block;
 				margin-left: 24px;
+
+				@media (max-width: 380px) {
+					width: 100%;
+					text-align: center;
+					margin-left: 0 !important;
+				}
 			}
 
 		}
 
 		.get-ticket {
 			float: right;
+
+			@media (max-width: 380px) {
+				float: right;
+				width: 100%;
+				margin: 0px auto;
+			}
 
 			a {
 				margin-top: 4px;
@@ -63,6 +87,10 @@ nav.header-section {
 				color: white;
 				padding: 8px 14px;
 				font-weight: bold;
+
+				@media(max-width: 380px) {
+					display: inherit;
+				}
 
 				&:hover {
 					color: $ngcolor-dark;
@@ -78,6 +106,10 @@ nav.header-section {
 			height: 60px;
 			padding: 10px;
 			width: 120px;
+
+			@media (max-width: 380px) {
+				display: none;
+			}
 
 			ul {
 
@@ -112,6 +144,64 @@ nav.header-section {
 			}
 		}
 
+		.share-on-mobile-modal {
+			display: none;
+			z-index: -1;
+
+			@media(max-width: 380px) {
+				display: block;
+				background-color: black;
+				position: absolute;
+				width: 100%;
+				left: 0;
+				top: -90px;
+				@include transition-cubic-bezier(0.3s);
+
+				span {
+					color: white;
+					font-size: 23px;
+					display: inline-block;
+					padding: 13px;
+				}
+
+				ul.social-icons {
+					display: inline-block;
+					float: right;
+
+					li {
+						display: inline-block;
+						width: 45px;
+						height: 45px;
+						padding: 0;
+						margin-top: 16px;
+						margin-right: 9px;
+
+						a {
+							color: white;
+							text-decoration: none;
+							padding: 8px;
+							display: inline-block;
+
+							&:hover {
+								color: $ngcolor;
+							}
+
+							.fa {
+								display: inline-block;
+								font-family: FontAwesome;
+								font-style: normal;
+								font-weight: normal;
+								font-size: 20px;
+								line-height: 0;
+								-webkit-font-smoothing: antialiased;
+								-moz-osx-font-smoothing: grayscale;
+							}
+						}
+					}
+				}
+			}
+		}
+
 	}
 
 	.bg-container {
@@ -129,6 +219,10 @@ nav.header-section {
 
 .section {
 	padding: 100px;
+
+	@media(max-width: 380px) {
+		padding: 20px;
+	}
 
 	.row {
 		margin-bottom: 50px;
@@ -177,6 +271,14 @@ nav.header-section {
 			top: 0;
 			left: 0;
 
+			@media(max-width: 380px) {
+				margin: 106px auto 0;
+
+				img {
+					width: 25%;
+				}
+			}
+
 			h2 {
 				color: $ngcolor2;
 				margin-bottom: 62px;
@@ -221,6 +323,20 @@ nav.header-section {
 				margin-right: 30px;
 				opacity: 1;
 				transition: opacity 0.2s;
+
+				@media (max-width: 380px) {
+					width: 250px;
+					margin-right: 0;
+					margin-bottom: 26px;
+
+					img {
+						width: 90%;
+					}
+
+					h4 {
+						font-size: 26px;
+					}
+				}
 
 				.speaker-bio {
 					pointer-events: none;

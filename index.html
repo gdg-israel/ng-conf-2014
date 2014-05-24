@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<head>
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
 
 		<title>ng-conf Israel 2014 - Israel Angular.JS Conference</title>
 
@@ -11,9 +12,12 @@
 		<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"/>
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"/>
 
-		<link rel="image_src" href="images/social.png" />
-
 		<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+
+		<link rel="image_src" href="images/social.png" />
+		<link rel="apple-touch-icon" href='images/57x57.png' />
+		<link rel="apple-touch-icon" sizes="72x72" href='images/72x72.png' />
+		<link rel="apple-touch-icon" sizes="114x114" href='images/114x114_.png' />
 		<link rel="shortcut icon" href="favicon.ico?v=2" />
 	</head>
 	<body>
@@ -39,12 +43,21 @@
                         Get your ticket now
                     </a>
                 </div>
+				<div class="share-on-mobile-modal">
+					<span>Share</span>
+					<ul class="list-unstyled list-inline text-right social-icons">
+						<li><a href="https://www.facebook.com/GDGTelAviv#"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://twitter.com/GtugTLV"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://plus.google.com/104207746710491978555/"><i class="fa fa-google-plus"></i></a>
+						</li>
+					</ul>
+				</div>
             </div>
             <div class="bg-container"></div>
         </nav>
 
 		<!-- Hero Section -->
-		<header class="hero section">
+		<header class="hero section home-section">
             <video muted autoplay="1" loop="1" poster="/images/poster.jpg">
                 <source src="/video/ng-conf.mp4" type='video/mp4' />
                 <!--<source src="/video/.webm" type='video/webm' />-->
@@ -391,7 +404,7 @@
 		</section>
 
 		<!-- Sponsors -->
-		<section class="section dark" id="partners">
+		<section class="section dark sponsor-section">
 			<h2 class="title">Partners &amp; Sponsors</h2>
 
 			<ul class="list-unstyled list-inline text-center">
@@ -445,7 +458,7 @@
 		</section>
 
 		<!-- Team -->
-		<section class="section team" id="team">
+		<section class="section team">
 			<h2 class="title">The ng-conf Team</h2>
 
 			<ul class="list-unstyled list-inline text-center">
