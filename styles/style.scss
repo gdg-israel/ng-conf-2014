@@ -352,6 +352,14 @@ nav.header-section {
 					z-index: 20;
 					transition: opacity 0.8s;
 					opacity: 0;
+
+					@media (max-width: 380px) {
+						display: none;
+						position: static;
+						width: 100%;
+						height: auto;
+						pointer-events: auto;
+					}
 				}
 
 				&:hover {
@@ -360,6 +368,10 @@ nav.header-section {
 
 					.speaker-bio {
 						opacity: 1;
+
+						@media (max-width: 380px) {
+							display: block;
+						}
 					}
 				}
 			}

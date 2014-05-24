@@ -256,11 +256,21 @@ nav.header-section {
           -webkit-transition: opacity 0.8s;
           transition: opacity 0.8s;
           opacity: 0; }
+          @media (max-width: 380px) {
+            .section.speakers .row .speaker .speaker-bio {
+              display: none;
+              position: static;
+              width: 100%;
+              height: auto;
+              pointer-events: auto; } }
         .section.speakers .row .speaker:hover {
           opacity: 1 !important;
           z-index: 10; }
           .section.speakers .row .speaker:hover .speaker-bio {
             opacity: 1; }
+            @media (max-width: 380px) {
+              .section.speakers .row .speaker:hover .speaker-bio {
+                display: block; } }
       .section.speakers .row + .row .speaker .speaker-bio {
         top: -280px; }
   .section.ng-coding h3 {
