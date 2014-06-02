@@ -311,6 +311,25 @@ nav.header-section {
 		}
 	}
 
+	&.aftermath {
+		text-align: center;
+		padding: 60px;
+
+		a.btn {
+			i.fa {
+				font-size: 32px;
+				display: inline-block;
+				margin-right: 4px;
+				vertical-align: middle;
+			}
+		}
+
+		h4 {
+			margin-top: 48px;
+			color: #898989;
+		}
+	}
+
 	&.speakers {
 		text-align: center;
 
